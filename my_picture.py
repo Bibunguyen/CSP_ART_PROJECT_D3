@@ -1,6 +1,7 @@
 import simple_graphics as sg
 import random
 
+#nathan part
 def draw_point_star(cx, cy, size, color):
     sg.set_fill_color(color)
     sg.set_line_thickness(0)
@@ -24,7 +25,7 @@ def draw_snowflake(cx, cy, size):
     sg.fill_circle(cx, cy, size)
 
 
-    
+#nathan part    
 def draw_picture(width, height):
     sg.fill_background("#020210")
     
@@ -48,10 +49,11 @@ def draw_picture(width, height):
             star_size = random.uniform(0.3, 1.5)
             star_color = random.choice(star_colors)
             draw_point_star(star_x, star_y, star_size, star_color)
-  
+    #Bibu part
     sg.draw_moon(random.randint(200,400), 100, 75)
     sg.draw_mountain_range(0, 600, width, 400)
     
+    #Kesha part
     # Snow on the ground
     sg.set_fill_color("#ddeeff")
     sg.set_outline_color("#ddeeff")
@@ -75,9 +77,4 @@ def draw_picture(width, height):
     
 if __name__ == "__main__":
     sg.start(draw_picture, 1200, 600)
-
-        
-        
-    
-
 
